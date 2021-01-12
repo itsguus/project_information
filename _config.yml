@@ -1,11 +1,10 @@
-title: 
-description: 
+title: Project Information
+description: Een interactieve datavisualisatie over de criminaliteit tijdens de corona periode in Nederkand
 url: 
 
 
 defaults:
-  -
-    scope:
+  - scope:
       path: "" # an empty string here means all files in the project
     values:
       layout: "page"

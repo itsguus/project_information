@@ -1,0 +1,27 @@
+{% include header.html %}
+
+
+<section class="introduction">
+
+</section>
+
+<section class="bigscroll">
+    <div class="uls">
+        <!-- <ul class="bolletjes">
+            {% for i in (1..12) %}
+            <li></li>
+            {% endfor %}
+        </ul> -->
+        <div class="lijn">
+            <div class="color"></div>
+        </div>
+        <ul class="bolletjes">
+            {% assign months = site.data.months.months %}
+            {% for item in months %}
+            <li><a href="#{{item.title | slugify}}">{{ item.title | capitalize }}</a></li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
+
+{% include footer.html %}
