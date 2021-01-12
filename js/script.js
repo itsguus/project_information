@@ -17,7 +17,7 @@ function scrollFunction() {
         // scroll gets the scrollPos minus where the last offset is (to start at 0 again), then gets the speed
         // by dividing the height by so 100% will be the end. Then minus 100 because the starting place
         // of the overflow div is -100%. Then we + 8.5% for every itreration it has gone. 
-        let scroll = parseFloat(((((scrollPos - currentMonthDom.offsetTop) / (currentMonthDom.offsetHeight)) / 12.5 * 100) - 100) + (8.5 * document.body.getAttribute("data-multiplier")));
+        let scroll = parseFloat(((((scrollPos - currentMonthDom.offsetTop) / (currentMonthDom.offsetHeight)) / 12.5 * 100) - 100) + (8.3 * document.body.getAttribute("data-multiplier")));
         console.log(currentMonthDom.offsetHeight);
         document.querySelector(".color").style = `transform: translateX(${scroll}%)`
     }
