@@ -1,4 +1,4 @@
 ---
 title: Datavis
-layout: page
+layout: home
 --- 
