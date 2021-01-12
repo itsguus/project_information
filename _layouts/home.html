@@ -5,23 +5,28 @@
 
 </section>
 
+<div class="asd"></div>
+
 <section class="bigscroll">
-    <div class="uls">
-        <!-- <ul class="bolletjes">
-            {% for i in (1..12) %}
-            <li></li>
-            {% endfor %}
-        </ul> -->
-        <div class="lijn">
-            <div class="color"></div>
-        </div>
+    <div class="sticky">
+        <div class="lijn"><div class="color"></div></div>
         <ul class="bolletjes">
             {% assign months = site.data.months.months %}
             {% for item in months %}
-            <li><a href="#{{item.title | slugify}}">{{ item.title | capitalize }}</a></li>
+            <li><a class="{{ item.abbreviation }}" href="#{{item.abbreviation | slugify}}">{{ item.title | capitalize }}</a></li>
             {% endfor %}
         </ul>
     </div>
+
+    <section id="mar"></section>
+    <section id="apr"></section>
+    <section id="may"></section>
+    <section id="jun"></section>
+    <section id="jul"></section>
+    <section id="aug"></section>
+    <section id="sep"></section>
+    <section id="okt"></section>
+    <section id="nov"></section>
 </section>
 
 {% include footer.html %}

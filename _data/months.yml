@@ -1,13 +1,19 @@
 months:
- - title: januari
- - title: februari 
  - title: maart
+   abbreviation: mar
  - title: april
+   abbreviation: apr
  - title: mei
+   abbreviation: may
  - title: juni
+   abbreviation: jun
  - title: juli
+   abbreviation: jul
  - title: augustus
+   abbreviation: aug
  - title: september 
+   abbreviation: sep
  - title: oktober
+   abbreviation: okt
  - title: november
- - title: december
+   abbreviation: nov
