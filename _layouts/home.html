@@ -1,32 +1,59 @@
 {% include header.html %}
 
+{% assign articles = page.articles %}
 
-<section class="introduction">
 
+
+<section id="introduction">
+    <figure>
+        <img src="/img/intro.svg" alt="Illustration of a man on a laptop">
+        <img src="/img/wolkje.svg" alt="Illustration of a cloud">
+        <img src="/img/wolkje.svg" alt="Illustration of a cloud">
+    </figure>
+    <section class="articles">
+        <article>
+            <h1>{{ articles[0].title }}</h1>
+            {{ articles[0].markdown | markdownify }}
+        </article>
+    </section>
 </section>
 
-<div class="asd"></div>
-
-<section class="bigscroll">
-    <div class="sticky">
-        <div class="lijn"><div class="color"></div></div>
-        <ul class="bolletjes">
-            {% assign months = site.data.months.months %}
-            {% for item in months %}
-            <li><a class="{{ item.abbreviation }}" href="#{{item.abbreviation | slugify}}">{{ item.title | capitalize }}</a></li>
+<section id="cijfers">
+    <section class="figures">
+        <figure>
+            <span>0</span>
+        </figure>
+        <figure class="bars">
+            <ul>
+                <li>
+                    <span>Inbraken</span>
+                    <span>19995</span>
+                </li>
+                <li>
+                    <span>Cybercrime</span>
+                    <span>8512</span>
+                </li>
+                <li>
+                    <span>Zakkenrollerij</span>
+                    <span>4315</span>
+                </li>
+            </ul>
+        </figure>
+    </section>
+    <section class="articles">
+        {% for article in page.cijfers_articles %}
+        <article>{{ article.markdown | markdownify }}</article>
+        {% endfor %}
+        <ul>
+            {% for item in page.krantenkoppen %}
+                <li>{{ item.title }}</li>
             {% endfor %}
         </ul>
-    </div>
+    </section>
+</section>
 
-    <section id="mar"><h2>maart</h2></section>
-    <section id="apr"><h2>april</h2></section>
-    <section id="may"><h2>mei</h2></section>
-    <section id="jun"><h2>juni</h2></section>
-    <section id="jul"><h2>juli</h2></section>
-    <section id="aug"><h2>augustus</h2></section>
-    <section id="sep"><h2>september</h2></section>
-    <section id="okt"><h2>oktober</h2></section>
-    <section id="nov"><h2>november</h2></section>
+
+<section id="next" style="height: 30rem">
 </section>
 
 {% include footer.html %}
