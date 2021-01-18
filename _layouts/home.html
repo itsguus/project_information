@@ -80,16 +80,68 @@
                     <li>{{ item.abbreviation | capitalize }}</li>
                 {% endfor %}
             </ul>
+            {% assign data = site.data.stacked_bar_data %}
+            {% assign max_input = 4200.0 %}
+            <ul class="data inbraken">
+                {% for item in data %}
+                    {% assign max_height = item.inbraak | divided_by: max_input | times: 100 %}
+                    <li style="max-height: {{ max_height }}%">
+                        <span>{{ item.inbraak }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul class="data cyber">
+                {% for item in data %}
+                    {% assign max_height = item.cyber | divided_by: max_input | times: 100 %}
+                    <li style="max-height: {{ max_height }}%">
+                        <span>{{ item.cyber }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul class="data zakkenrol">
+                {% for item in data %}
+                    {% assign max_height = item.zakkenrollerij | divided_by: max_input | times: 100 %}
+                    <li style="max-height: {{ max_height }}%">
+                        <span>{{ item.zakkenrollerij }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
         </div>
     </figure>
     <section class="articles">
         {% for article in page.stackedbar_articles %}
-        <article>{{ article.markdown | markdownify }}</article>
+            <article>{{ article.markdown | markdownify }}</article>
         {% endfor %}
     </section>
 </section>
 
-<section id="next" style="height: 30rem">
+<section id="stories">
+    <div>
+        <h2 class="h1">Slachtoffers van cyberfraude aan het woord</h2>
+    </div>
+    <ul>
+        {% for story in page.stories %}
+        {% assign count = forloop.index | modulo: 2 %}
+            <li {% if count == 1 %} class="left" {% endif %}>
+                <div>
+                <figure>
+                    <audio src="{{ story.audio }}"></audio>
+                    <img src="/img/audio.svg" alt="Audio icon">
+                </figure>
+                <img src="/img/story{{ forloop.index }}.svg" alt=""> 
+                <h3>{{ story.title }}</h3>
+                {{ story.markdown | markdownify }}
+            </div>
+            </li>
+        {% endfor %}
+        <li> 
+            {{ page.pay_off_markdown | markdownify }}
+        </li>
+    </ul>
+</section>
+
+<section id="bron">
+    <a href="">Bron</a>
 </section>
 
 {% include footer.html %}

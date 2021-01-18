@@ -31,7 +31,27 @@ stackedbar_articles:
   - markdown: |
       ### 174.3%
       Cybercriminelen proberen op verschillende manieren te profiteren van de coronacrisis. Sinds maatregelen zijn genomen om verspreiding van het coronavirus tegen te gaan is het digitale verkeer sterk toegenomen. Deze crisis heeft bij veel mensen onzekerheid gebracht en een dringende behoefte aan informatie, wat een gunstige combinatie is voor cybercriminelen.
-
-
-
+stories: 
+    - title: >- 
+        Oma Truus(81) via WhatsApp opgelicht voor 14.000 euro: "Ze is in één dag al haar geld kwijt".
+      markdown: | 
+        Goedwillend als ik ben, maakte ik verschillende keren geld over naar mijn dochter Elles, die hier via WhatsApp ‘om vroeg’. Althans, dat dacht ik. Elles bleek de in totaal overgemaakte **€14.000** echter nooit te hebben ontvangen… En ze had er ook niet om gevraagd.
+      audio: 
+    - title: >- 
+        Oma Truus(81) via WhatsApp opgelicht voor 14.000 euro: "Ze is in één dag al haar geld kwijt".
+      markdown: | 
+        Goedwillend als ik ben, maakte ik verschillende keren geld over naar mijn dochter Elles, die hier via WhatsApp ‘om vroeg’. Althans, dat dacht ik. Elles bleek de in totaal overgemaakte **€14.000** echter nooit te hebben ontvangen… En ze had er ook niet om gevraagd.
+      audio: 
+    - title: >- 
+        Oma Truus(81) via WhatsApp opgelicht voor 14.000 euro: "Ze is in één dag al haar geld kwijt".
+      markdown: | 
+        Goedwillend als ik ben, maakte ik verschillende keren geld over naar mijn dochter Elles, die hier via WhatsApp ‘om vroeg’. Althans, dat dacht ik. Elles bleek de in totaal overgemaakte **€14.000** echter nooit te hebben ontvangen… En ze had er ook niet om gevraagd.
+      audio: 
+    - title: >- 
+        Oma Truus(81) via WhatsApp opgelicht voor 14.000 euro: "Ze is in één dag al haar geld kwijt".
+      markdown: | 
+        Goedwillend als ik ben, maakte ik verschillende keren geld over naar mijn dochter Elles, die hier via WhatsApp ‘om vroeg’. Althans, dat dacht ik. Elles bleek de in totaal overgemaakte **€14.000** echter nooit te hebben ontvangen… En ze had er ook niet om gevraagd.
+      audio: 
+pay_off_markdown: |
+    Bent u of is iemand in uw omgeving slachtoffer van cybercrime? Of kent u personen die zich bezighouden met criminele digitale activiteiten? Doe dan **aangifte** bij de politie.
 ---

@@ -41,7 +41,19 @@ function scrollFunction() {
         addClassAt("axes", 1.4, innerPos, document.querySelector("#stackedbar"));
     }
     else if(currentSectionObj.name == "stackedbar") {
-        // addClassAt("legend", 0.5, innerPos, document.body);
+        addClassAt("axes", 0, innerPos, document.querySelector("#stackedbar"));
+        addClassAt("bar1", 0.265, innerPos);
+        addClassAt("bar2", 0.35, innerPos);
+        addClassAt("bar3", 0.57, innerPos);
+        addClassAt("allbars", 0.7, innerPos);
+        addClassAt("hide", 0.9, innerPos, document.querySelector("#cijfers"));
+        addClassAt("hide", 0.9, innerPos);
+    }
+    else if(currentSectionObj.name == "stories") {
+        addClassAt("one", 0.40, innerPos);
+        addClassAt("two", 0.69, innerPos);
+        addClassAt("three", 0.93, innerPos);
+        addClassAt("four", 1.17, innerPos);
     }
 }
 
