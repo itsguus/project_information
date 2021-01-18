@@ -21,8 +21,6 @@ function scrollFunction() {
     document.body.className = currentSectionObj.name;
     innerPos = parseInt(scrollPos - currentSectionObj.offset) / currentSectionObj.height + 0.45;
 
-    console.log(innerPos);
-
     if (currentSectionObj.name == "introduction") {
         addClassAt("cloud1", 0.5, innerPos);
         addClassAt("cloud2", 0.7, innerPos);
