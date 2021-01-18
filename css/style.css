@@ -117,6 +117,8 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 #stackedbar .articles article { margin-bottom: 10rem; }
 #stackedbar .articles article:last-of-type {margin-bottom: 5rem;}
 
+.stackedbar #stackedbar .canvas { pointer-events: all;}
+
 /* BAR COLORS AND POSITIONS */
 #stackedbar .canvas .data.inbraken li {background: #1720fc; transform: translateX(-0.5rem);}
 #stackedbar .canvas .data.cyber li {background: #7C81FD;}
