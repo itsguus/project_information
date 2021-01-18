@@ -167,7 +167,7 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 
 /* SLACHTOFFERS AAN HET WOORD */
 #stories {margin-top: 10rem; margin-bottom: 10rem; flex-direction: column;}
-#stories > div {position: sticky; top: 0; z-index: 1; margin-left: -3rem; width: calc(50% + 6rem); background: #FFF; padding-top: 3rem;}
+#stories > div {position: sticky; top: 0; z-index: 1; margin-left: -3rem; padding-left: 3rem; width: calc(50% + 6rem); background: #FFF; padding-top: 3rem;}
 #stories .h1 { font-size: 2.4rem; width: 18rem; }
 #stories h3 {font-size: 1.4rem; font-weight: 500; margin-bottom: 0.5rem;}
 #stories strong {font-size: 1.1rem; font-family: "Larken"; color: #1720fc; font-weight: 400;}
