@@ -21,15 +21,17 @@ cijfers_articles:
         Gedupeerden tijdens de pandemie volgens de politiecijfers vanaf 1 maart 2020 tot en met 30 november 2020. Dit is een weergave van de hoeveelheid mensen die getroffen zijn door bepaalde misdaden.
 
         Niet alle criminelen zijn inactief door de pandemie. Het aantal fraudegevallen is sterk toegenomen. Afgelopen jaar werden in maart bijna 9.000 gevallen van fraude gemeld, tegenover 6.600 een jaar geleden. Het gaat daarbij vooral om de kwestie van digitale fraude. 34% hiervan is cybercrime. in braak en % was zakkenrollerij.
-krantenkoppen: 
-    - title: Hoi brand moord corona crisis 
-      url: 
-    - title: Hoi brand moord corona crisis 
-      url: 
-    - title: Hoi brand moord corona crisis 
-      url: 
-    - title: Hoi brand moord corona crisis 
-      url: 
-    - title: Hoi brand moord corona crisis 
-      url: 
+stackedbar_articles: 
+  - markdown: |
+      ### -75.1%
+      Tijdens de lockdown wordt er veel minder zakkenrollerij bij de politie gemeld. Of het nou komt door het gebrek aan evenementen, legere winkelstraten of doordat zelfs criminelen liever anderhalve meter afstand houden.
+  - markdown: |
+      ### -60.2%
+      De pandemie heeft ook een positief effect gehad: het aantal inbraken is sterk gedaald. Nu we allemaal veel meer thuiswerken, zijn er minder mogelijkheden voor inbrekers om ongezien een huis binnen te komen.
+  - markdown: |
+      ### 174.3%
+      Cybercriminelen proberen op verschillende manieren te profiteren van de coronacrisis. Sinds maatregelen zijn genomen om verspreiding van het coronavirus tegen te gaan is het digitale verkeer sterk toegenomen. Deze crisis heeft bij veel mensen onzekerheid gebracht en een dringende behoefte aan informatie, wat een gunstige combinatie is voor cybercriminelen.
+
+
+
 ---

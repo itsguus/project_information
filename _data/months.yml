@@ -1,4 +1,8 @@
 months:
+ - title: januari
+   abbreviation: jan
+ - title: februari
+   abbreviation: feb
  - title: maart
    abbreviation: mar
  - title: april

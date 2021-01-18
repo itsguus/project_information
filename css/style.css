@@ -64,17 +64,40 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 
 
 #cijfers.showBlocks figure.bars ul {width: 100%;}
-#cijfers.showBlocks figure.bars ul li span:nth-of-type(1) {opacity: 1; transition-delay: 500ms;}
+#cijfers.showBlocks figure.bars ul li span:nth-of-type(2) {transition: 500ms ease;}
+#cijfers.showBlocks figure.bars ul li span:nth-of-type(1) {opacity: 1; transition-delay: 500ms; z-index: 2;}
 #cijfers.showBlocks.overflow figure.bars ul {overflow: visible;}
 #cijfers.showBlocks.block1 figure.bars ul li:nth-of-type(1) {padding-bottom: calc(48% - 2rem); margin-top: calc(-48% + 2rem); }
 #cijfers.showBlocks.block2 figure.bars ul li:nth-of-type(2) {padding-bottom: calc(28% - 2rem); margin-top: calc(-28% + 2rem); }
 #cijfers.showBlocks.block3 figure.bars ul li:nth-of-type(3) {padding-bottom: calc(18% - 2rem); margin-top: calc(-18% + 2rem); }
 
-#cijfers .articles > ul { width: 65rem; margin-left: -47rem; margin-top: 15rem; z-index: 3;}
-#cijfers .articles > ul li {font-family: "Larken"; color: #FFF; font-size: 2rem; margin-bottom: 0.5rem; }
+#cijfers.showBlocks.block3 figure.bars ul li span:nth-of-type(1) {transition-delay: 0s;}
+#cijfers.showBlocks.block3.legend figure.bars ul li:nth-of-type(1), 
+#cijfers.showBlocks.block3.legend figure.bars ul li:nth-of-type(2), 
+#cijfers.showBlocks.block3.legend figure.bars ul li:nth-of-type(3) {padding-bottom: 1.5rem; border-radius: 0.2rem; width: 1.5rem; border-radius: 0.2rem; margin-top: 0; height: 0; transition: 750ms ease}
+#cijfers.showBlocks.block3.legend figure.bars ul li span:nth-of-type(2) {opacity: 0;}
+#cijfers.showBlocks.block3.legend figure.bars ul li span:nth-of-type(1) {transform: translate(2rem, -1.8rem); font-weight: 400;}
+#cijfers.showBlocks.block3.legend figure.bars ul li:nth-of-type(1) {transform: translate(0, -36rem); } 
+#cijfers.showBlocks.block3.legend figure.bars ul li:nth-of-type(2) {transform: translate(-19.25rem, -34rem); background-color: #7C81FD;} 
+#cijfers.showBlocks.block3.legend figure.bars ul li:nth-of-type(3) {transform: translate(-38.5rem, -32rem); background-color: #C8C3E9; } 
 
-#cijfers.showBlocks.block3 figure.bars ul li:nth-of-type(1) {transition: 2s ease; transition-delay: 0;}
 
-#cijfers.showBlocks.block1.inbraken .articles article {opacity: 0;}
+/* #cijfers .articles > ul  { width: 65rem; margin-left: -47rem; margin-top: 10rem; z-index: 3; display: flex;} 
+#cijfers .articles > ul  li {font-family: "Larken"; color: #FFF;  margin-bottom: 0.2rem; }
+
+#cijfers.showBlocks.inbraken figure.bars ul li span:nth-of-type(2) {opacity: 0;} */
+
+/* #cijfers.showBlocks.block3 figure.bars ul li:nth-of-type(1) {transition: 500ms ease; transition-delay: 500ms;} */
+/* #cijfers.showBlocks.block1.inbraken .articles article {opacity: 0;}
 #cijfers.showBlocks.block1.inbraken figure.bars ul li:nth-of-type(1) span {opacity: 0;}
-#cijfers.showBlocks.block1.inbraken figure.bars ul li:nth-of-type(1) {transform: scale(7) translateX(30%); z-index: 5;}
+#cijfers.showBlocks.block1.inbraken figure.bars ul li:nth-of-type(1) {z-index: 5; transform-origin: left; transition: 500ms ease; transition-delay: 1s;}
+#cijfers.showBlocks.block3.inbraken figure.bars ul li:nth-of-type(1) {transition: 500ms ease; transition-delay: 0ms;}
+
+.bluebg { position: fixed; top: 35rem; background: #1720fc; width: 0rem; height: 0rem; left: 0; right: 0; margin: auto; transition: 500ms ease; transform: translateX(-23rem);}
+.inbraken .bluebg { width: calc(100vw + 23rem); height: calc(100vh + 23rem) ; top: -11.5rem; transition: 1s ease; } */
+
+#stackedbar { margin-top: 25rem;}
+#stackedbar .canvas {position: fixed; background: silver; top: 15rem; height: 30rem; width: calc(65rem - 20rem); }
+#stackedbar .canvas .y {position: absolute; left: 0; top: 0; height: 100%; border-left: 3px solid black;}
+#stackedbar .canvas .x {position: absolute; left: 0; bottom: 0; width: 100%; border-bottom: 3px solid black;}
+#stackedbar .canvas .labels {display: flex; justify-content: space-around; position: absolute; width: 100%; bottom: -2rem;}

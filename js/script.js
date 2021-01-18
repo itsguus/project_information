@@ -28,15 +28,20 @@ function scrollFunction() {
         addClassAt("cloud2", 0.7, innerPos);
         addClassAt("noclouds", 0.95, innerPos);
     }
-    
-    if (currentSectionObj.name == "cijfers") {
+
+    else if (currentSectionObj.name == "cijfers") {
         if (!currentSectionObj.el.classList.contains("counterStarted")) startCounter(currentSectionObj.el);
         addClassAt("showBlocks", 0.5, innerPos);
-        addClassAt("overflow", 0.55, innerPos);
+        addClassAt("overflow", 0.58, innerPos);
         addClassAt("block1", 0.65, innerPos);
         addClassAt("block2", 0.70, innerPos);
         addClassAt("block3", 0.75, innerPos);
         addClassAt("inbraken", 0.9, innerPos);
+        addClassAt("legend", 1.3, innerPos);
+        addClassAt("axes", 1.4, innerPos, document.querySelector("#stackedbar"));
+    }
+    else if(currentSectionObj.name == "stackedbar") {
+        // addClassAt("legend", 0.5, innerPos, document.body);
     }
 }
 
@@ -64,10 +69,16 @@ function countSlowly(el) {
     countSpan.textContent = counter;
 }
 
-function addClassAt(name, percentage, innerPos) {
+function addClassAt(name, percentage, innerPos, otherEl) {
     var currentSectionEl = getSection(window.scrollY).el;
-    if (innerPos >= percentage) currentSectionEl.classList.add(name);
-    else if (innerPos < percentage) currentSectionEl.classList.remove(name);
+    if (!otherEl) {
+        if (innerPos >= percentage) currentSectionEl.classList.add(name);
+        else if (innerPos < percentage) currentSectionEl.classList.remove(name);
+    }
+    else { 
+        if (innerPos >= percentage) otherEl.classList.add(name);
+        else if (innerPos < percentage) otherEl.classList.remove(name);
+    }
 }
 
 function getSection(y) {

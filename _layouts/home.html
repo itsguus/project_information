@@ -39,19 +39,55 @@
                 </li>
             </ul>
         </figure>
+        <!-- <div class="bluebg"></div> -->
     </section>
     <section class="articles">
         {% for article in page.cijfers_articles %}
         <article>{{ article.markdown | markdownify }}</article>
         {% endfor %}
-        <ul>
-            {% for item in page.krantenkoppen %}
-                <li>{{ item.title }}</li>
-            {% endfor %}
-        </ul>
+        <!-- <ul>
+            <li>
+                <ul>
+                    {% for item in page.krantenkoppen_inbraken %}
+                    <li>{{ item.title }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    {% for item in page.krantenkoppen_cybercrime %}
+                    <li>{{ item.title }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    {% for item in page.krantenkoppen_zakkenrollerij %}
+                    <li>{{ item.title }}</li>
+                    {% endfor %}
+                </ul>
+            </li> -->
     </section>
 </section>
 
+<section id="stackedbar">
+    <figure>
+        <div class="canvas">
+            <div class="x"></div>
+            <div class="y"></div>
+            <ul class="labels">
+                {% for item in site.data.months.months %}
+                    <li>{{ item.abbreviation | capitalize }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </figure>
+    <section class="articles">
+        {% for article in page.stackedbar_articles %}
+        <article>{{ article.markdown | markdownify }}</article>
+        {% endfor %}
+    </section>
+</section>
 
 <section id="next" style="height: 30rem">
 </section>
