@@ -58,6 +58,8 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 #cijfers figure.bars ul li:nth-of-type(2) span:nth-of-type(2)  {bottom: 40%;}
 #cijfers figure.bars ul li:nth-of-type(3) span:nth-of-type(2)  {bottom: 35%;}
 
+.introduction #cijfers figure.bars {display: none;}
+
 #cijfers figure.bars ul li:nth-of-type(1) {width: calc(48% - 2rem); }
 #cijfers figure.bars ul li:nth-of-type(2) {width: calc(28% - 2rem); }
 #cijfers figure.bars ul li:nth-of-type(3) {width: calc(18% - 2rem); }
@@ -100,7 +102,7 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 
 /* BARCHART STATES */
 #stackedbar { margin-top: 25rem;}
-#stackedbar .canvas {position: fixed; top: 13rem; height: 25rem; width: calc(65rem - 20rem); opacity: 0; transition: 500ms ease;}
+#stackedbar .canvas {position: fixed; top: 13rem; height: 25rem; width: calc(65rem - 20rem); opacity: 0; pointer-events: none; transition: 500ms ease;}
 #stackedbar .canvas .y {position: absolute; left: 0; top: 0; height: 100%; border-left: 3px solid black;}
 #stackedbar .canvas .x {position: absolute; left: 0; bottom: 0; width: 100%; border-bottom: 3px solid black;}
 #stackedbar .canvas .labels {display: flex; justify-content: space-around; position: absolute; width: 100%; bottom: -2rem;}
