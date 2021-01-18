@@ -50,7 +50,7 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 #cijfers section.articles article:nth-of-type(1) { margin-bottom: 34rem;}
 #cijfers section.figures {flex-direction: column;}
 #cijfers figure:nth-of-type(1) { width: calc(65rem - 20rem); height: 40rem;}
-#cijfers figure:nth-of-type(1) span {font-size: 10rem; margin: 0 auto; display: block; font-family: "Larken"; color: #C4C4C4; position: sticky; top: 10rem; margin-bottom: 5rem; margin-left: 4rem; transition: 500ms ease; opacity: 0;}
+#cijfers figure:nth-of-type(1) span {font-size: 10rem; margin: 0 auto; display: block; font-family: "Larken"; color: #C4C4C4; position: sticky; top: 20rem; margin-bottom: 5rem; margin-left: 4rem; transition: 500ms ease; opacity: 0;}
 #cijfers.counterStarted figure:nth-of-type(1) span {opacity: 1;}
 
 #cijfers figure.bars {width: calc(65rem - 25rem); position: fixed; top: 40rem; transition: 500ms ease; }
