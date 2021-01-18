@@ -195,7 +195,7 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 
 #stories ul li:last-of-type {background: #1720fc; border: none; color: #FFF; width: 15rem; position: absolute; bottom: 0; left: 0; padding: 2.5rem; border-radius: 2rem; height: 7rem;}
 #stories ul li:last-of-type p {margin-bottom: 0;}
-#stories ul li:last-of-type strong {color: #FFF; text-decoration: underline; font-size: 1rem; font-weight: 500;}
+#stories ul li:last-of-type a {color: #FFF; text-decoration: underline; font-size: 1rem; font-weight: 500;}
 
 /* BRON */
 #bron { width: 100%; background: #1720fc;  margin-bottom: 0; border-radius: 1rem 1rem 0 0;}
