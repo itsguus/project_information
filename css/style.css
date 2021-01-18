@@ -199,4 +199,4 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 
 /* BRON */
 #bron { width: 100%; background: #1720fc;  margin-bottom: 0; border-radius: 1rem 1rem 0 0;}
-#bron a {padding: 4rem; text-align: center; display: block; width: 100%; text-decoration: underline; font-family: "Larken"; color: #FFF; font-size: 1.7rem;}
+#bron a {padding: 2rem; text-align: center; display: block; width: 100%; text-decoration: underline; font-family: "Larken"; color: #FFF; font-size: 1.7rem;}
