@@ -8,7 +8,7 @@ br {margin:0 !important; color: #1720fc; }
 
 
 /* CUSTOM CURSOR */
-body { cursor: url('{{ site.url}}/img/mouse.svg') 14 8, auto;}
+body { cursor: url('https://itsguus.github.io/project_information/img/mouse.svg') 14 8, auto;}
 
 /* HEADERS */
 h1, .h1 {font-family: "Larken"; font-size: 2.8rem; line-height: 1; font-weight: 500; letter-spacing: -2px; color: #1720fc; margin-bottom: 1rem;}
