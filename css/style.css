@@ -1,6 +1,6 @@
 * {padding: 0; margin: 0;  border: 0;}
 html {font-size: 18px; scroll-behavior: smooth;}
-body {font-size: 1rem; color: #1d1a1c; line-height: 1.4; font-family: "Gill Sans"; font-weight: 400; background:#FFF;}
+body {font-size: 1rem; color: #1d1a1c; line-height: 1.5; font-family: "Gill Sans"; font-weight: 300; background:#FFF;}
 a {text-decoration: none; color: #1d1a1c;}
 ul, ol {list-style-type: none;}
 p {margin-bottom: 1.4em;}
@@ -12,7 +12,7 @@ body { cursor: url('/img/mouse.svg') 14 8, auto;}
 
 /* HEADERS */
 h1, .h1 {font-family: "Larken"; font-size: 2.8rem; line-height: 1; font-weight: 500; letter-spacing: -2px; color: #1720fc; margin-bottom: 1rem;}
-h2 {font-size: 1.3rem; font-family: "Poppins"; font-weight: 300;}
+h2 {font-size: 1.3rem; font-family: "Poppins"; font-weight: 300; margin-bottom: 0.2rem;}
 h3 {font-size: 2rem; font-family: "Larken"; color: #1720fc; font-weight: 400;}
 
 /* GENERAL */
