@@ -12,8 +12,8 @@ body { cursor: url('/img/mouse.svg') 14 8, auto;}
 
 /* HEADERS */
 h1, .h1 {font-family: "Larken"; font-size: 2.8rem; line-height: 1; font-weight: 500; letter-spacing: -2px; color: #1720fc; margin-bottom: 1rem;}
-h2 {font-size: 1.3rem; font-family: "Poppins"; font-weight: 300; margin-bottom: 0.2rem;}
-h3 {font-size: 2rem; font-family: "Larken"; color: #1720fc; font-weight: 400;}
+h2 {font-size: 1.3rem; font-family: "Poppins"; font-weight: 300; margin-bottom: 0.5rem;}
+h3 {font-size: 2rem; font-family: "Larken"; color: #1720fc; font-weight: 400; margin-bottom: 0.5rem;;}
 
 /* GENERAL */
 
