@@ -117,8 +117,30 @@ const playButtons = document.querySelectorAll("audio + img");
 playButtons.forEach(
     function(btn) {
         btn.addEventListener("click", function() {
-            this.parentNode.querySelector("audio").play();
+            if(!btn.classList.contains("active")) {
+                document.querySelectorAll("audio").forEach(
+                    function(audio) {
+                        audio.pause();
+                        audio.parentNode.querySelector("img").classList.remove("active")
+                    }
+                );
+                if(this.classList.contains("audio3")) this.parentNode.querySelector("audio").volume = 0.3;
+                this.parentNode.querySelector("audio").play();
+                this.classList.add("active");
+            }
+            else {
+                this.parentNode.querySelector("audio").pause();
+                this.classList.remove("active");
+            }
         });
     }
 )
 
+const audios = document.querySelectorAll("audio");
+audios.forEach(
+    function(audio) {
+        audio.onended = function() {
+            this.parentNode.querySelector('img').classList.remove("active");
+        }
+    }
+);

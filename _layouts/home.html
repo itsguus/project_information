@@ -129,7 +129,7 @@
                     <audio>
                         <source src="{{ story.audio }}" type="audio/mp4"> 
                     </audio>
-                    <img src="/img/audio.svg" alt="Audio icon">
+                    <img  class="audio{{ forloop.index }}" src="/img/audio.svg" alt="Audio icon">
                 </figure>
                 <img src="/img/story{{ forloop.index }}.svg" alt=""> 
                 <h3>{{ story.title }}</h3>
