@@ -20,7 +20,7 @@ function scrollFunction() {
     currentSectionObj = getSection(scrollPos);
     document.body.className = currentSectionObj.name;
     innerPos = parseInt(scrollPos - currentSectionObj.offset) / currentSectionObj.height + 0.45;
-
+    console.log(innerPos);
     if (currentSectionObj.name == "introduction") {
         addClassAt("cloud1", 0.5, innerPos);
         addClassAt("cloud2", 0.7, innerPos);
@@ -37,13 +37,13 @@ function scrollFunction() {
         addClassAt("inbraken", 0.9, innerPos);
         addClassAt("legend", 1.3, innerPos);
         addClassAt("axes", 1.4, innerPos, document.querySelector("#stackedbar"));
+        addClassAt("bar1", 1.5, innerPos, document.querySelector("#stackedbar"));
     }
     else if(currentSectionObj.name == "stackedbar") {
         addClassAt("axes", 0, innerPos, document.querySelector("#stackedbar"));
-        addClassAt("bar1", 0.265, innerPos);
         addClassAt("bar2", 0.35, innerPos);
         addClassAt("bar3", 0.57, innerPos);
-        addClassAt("allbars", 0.7, innerPos);
+        addClassAt("allbars", 0.8, innerPos);
         addClassAt("hide", 0.9, innerPos, document.querySelector("#cijfers"));
         addClassAt("hide", 0.9, innerPos);
     }

@@ -8,10 +8,11 @@ br {margin:0 !important; color: #1720fc; }
 
 
 /* CUSTOM CURSOR */
-body { cursor: url('/img/mouse.svg') 14 8, auto;}
+body { cursor: url('{{ site.url}}/img/mouse.svg') 14 8, auto;}
 
 /* HEADERS */
 h1, .h1 {font-family: "Larken"; font-size: 2.8rem; line-height: 1; font-weight: 500; letter-spacing: -2px; color: #1720fc; margin-bottom: 1rem;}
+h1 { margin-bottom: 2rem;}
 h2 {font-size: 1.3rem; font-family: "Poppins"; font-weight: 300; margin-bottom: 0.5rem;}
 h3 {font-size: 2rem; font-family: "Larken"; color: #1720fc; font-weight: 400; margin-bottom: 0.5rem;;}
 
@@ -110,6 +111,8 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 #stackedbar .canvas .x {position: absolute; left: 0; bottom: 0; width: 100%; border-bottom: 3px solid black;}
 #stackedbar .canvas .labels {display: flex; justify-content: space-around; position: absolute; width: 100%; bottom: -2rem;}
 #stackedbar .canvas .labels li {width: 32px; text-align: center;}
+#stackedbar .canvas .lockdown {background: rgba(255, 128, 128, 0.2); position: absolute; left: 25%; width: 39%; top: 1rem; height: calc(100% - 1rem - 3px); border-left: 3px dotted #FF8080; border-right: 3px dotted #FF8080;}
+#stackedbar .canvas .lockdown span {display: block; text-align: center; font-family: "Larken"; color: #FF8080; font-size: 0.8rem; margin-top: -1.5rem;}
 #stackedbar .canvas .data { display: flex; justify-content: space-around; position: absolute; width: 100%; bottom: 3px; height: 100%; align-items: flex-end; }
 #stackedbar .canvas .data li {height: 0; width: 0.5rem; z-index: 1; transition: 1s ease;}
 #stackedbar .canvas .data li span {position: absolute; width: 1.3rem; text-align: center; padding: 0.5rem 0.8rem; background: #FFF; border-radius: 0.5rem; font-size: 0.6rem; margin-left: -1.35rem; margin-top: -2.5rem; opacity: 0; pointer-events: none; transition: 250ms ease; z-index: 2;}
@@ -208,11 +211,11 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 
 
 /* 
-    Speed van bars all later.
-    Content kloppend maken.
-    Intelligente lockdown in de barchart zetten.
-    Progress indicator
-    Audio's
-    Scroll percentages finetunen
-    Link naar bron
+Content kloppend maken.
+Intelligente lockdown in de barchart zetten.
+Progress indicator
+Audio's
+Scroll percentages finetunen
+Link naar bron naar notion pagina
+Speed van bars all later.
 */
