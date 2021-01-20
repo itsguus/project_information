@@ -1,5 +1,5 @@
 ---
-title: Datavis
+title: Home
 layout: home
 articles:
     -  title: Criminaliteit tijdens de Covid-19 periode
@@ -35,7 +35,7 @@ stories:
         Oma Truus(81) via WhatsApp opgelicht voor 14.000 euro: "Ze is in één dag al haar geld kwijt".
       markdown: | 
         Goedwillend als ik ben, maakte ik verschillende keren geld over naar mijn dochter Elles, die hier via WhatsApp ‘om vroeg’. Althans, dat dacht ik. Elles bleek de in totaal overgemaakte **€14.000** echter nooit te hebben ontvangen… En ze had er ook niet om gevraagd.
-      audio: 
+      audio: /img/truus.m4a
     - title: >- 
         Huibert werd slachtoffer van datingfraude: ’voor 16.000 euro opgelicht’.
       markdown: | 
@@ -44,7 +44,7 @@ stories:
         Alle contact was digitaal, want een videogesprek hadden we nooit gehad, laat staan een ontmoeting in het echt. Eén keer belden ze, zo’n 50 seconden. “Dat vond ik wel vreemd, maar ze had altijd een smoesje klaar. Een slechte connectie, geen beltegoed, of ze zat in Dubai waar skypen niet toegestaan was. Ik was graag naar Turkije gevlogen, maar dat hield ze af.”
 
         Toch liet ik mij meeslepen in een online verliefdheid.
-      audio: 
+      audio: /img/truus.m4a
     - title: >- 
         Nando’s vader werd kaalgeplukt door criminelen via truc: ‘Hij is €27.500 euro kwijt’
       markdown: | 
@@ -55,14 +55,14 @@ stories:
         ”Als ik dat niet deed, dan werd mijn rekening leeggeplunderd, waarschuwde de vrouw. Ik moest al mijn geld van mijn spaarrekening overmaken naar mijn betaalrekening. Ook moest ik mijn daglimiet aanpassen. De vrouw bleef maar op me inpraten. Ik deed dit om mijn geld veilig te stellen. Maar in werkelijkheid was al mijn geld in een uur tijd in handen van criminelen gevallen. Ik had geen cent meer, zelfs niet voor boodschappen.”
 
         “Ik zou eind dit jaar met pensioen gaan en nu ben ik alles kwijt wat ik heel mijn leven heb opgebouwd. Ik ben er echt kapot van. Dit mag niet nog meer mensen overkomen.”
-      audio: 
+      audio: /img/nando.m4a
     - title: >- 
         Twan (15) spaarde maanden voor een PlayStation 5 maar komt nu bedrogen uit: ‘Ik voel me stom’.
       markdown: | 
         Ik had er maanden voor gespaard en was dolgelukkig toen ik op internet de nieuwe PlayStation 5 had besteld, maar ik kwam er bedrogen uit. Op de website PS5online.nl gaf ik **€500** uit voor de nieuwe spelcomputer, maar ik begon argwaan te ruiken toen het oorverdovend stil bleef. "Ik ben heel boos. Nu wil ik anderen waarschuwen."
 
         Inmiddels is de website offline gehaald. "Naar mijn geld kan ik nu wel fluiten. Dat besef ik ook wel".
-      audio: 
+      audio: /img/twan.m4a
 pay_off_markdown: |
     Bent u of is iemand in uw omgeving slachtoffer van cybercrime? Of kent u personen die zich bezighouden met criminele digitale activiteiten? Doe dan [aangifte](https://www.politie.nl/aangifte-of-melding-doen) bij de politie.
 ---

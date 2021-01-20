@@ -4,9 +4,9 @@
 
 <section id="introduction">
     <figure>
-        <img src="{{ site.url }}/img/intro.svg" alt="Illustration of a man on a laptop">
-        <img src="{{ site.url }}/img/wolkje.svg" alt="Illustration of a cloud">
-        <img src="{{ site.url }}/img/wolkje.svg" alt="Illustration of a cloud">
+        <img src="/img/intro.svg" alt="Illustration of a man on a laptop">
+        <img src="/img/wolkje.svg" alt="Illustration of a cloud">
+        <img src="/img/wolkje.svg" alt="Illustration of a cloud">
     </figure>
     <section class="articles">
         <article>
@@ -126,10 +126,12 @@
             <li {% if count == 1 %} class="left" {% endif %}>
                 <div>
                 <figure>
-                    <audio src="{{ story.audio }}"></audio>
-                    <img src="{{ site.url }}/img/audio.svg" alt="Audio icon">
+                    <audio>
+                        <source src="{{ story.audio }}" type="audio/mp4"> 
+                    </audio>
+                    <img src="/img/audio.svg" alt="Audio icon">
                 </figure>
-                <img src="{{ site.url }}/img/story{{ forloop.index }}.svg" alt=""> 
+                <img src="/img/story{{ forloop.index }}.svg" alt=""> 
                 <h3>{{ story.title }}</h3>
                 {{ story.markdown | markdownify }}
             </div>

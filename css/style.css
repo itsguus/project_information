@@ -8,7 +8,7 @@ br {margin:0 !important; color: #1720fc; }
 
 
 /* CUSTOM CURSOR */
-body { cursor: url('https://itsguus.github.io/project_information/img/mouse.svg') 14 8, auto;}
+body { cursor: url('/img/mouse.svg') 14 8, auto;}
 
 /* HEADERS */
 h1, .h1 {font-family: "Larken"; font-size: 2.8rem; line-height: 1; font-weight: 500; letter-spacing: -2px; color: #1720fc; margin-bottom: 1rem;}
@@ -174,9 +174,9 @@ div.progress {position: fixed; background: #1720fc; height: 0.1rem; top: 0; left
 #stackedbar.hide .canvas { opacity: 0; pointer-events: none; }
 
 /* SLACHTOFFERS AAN HET WOORD */
-#stories {margin-top: 10rem; margin-bottom: 10rem; flex-direction: column;}
+#stories { margin-bottom: 10rem; flex-direction: column;}
 #stories > div {position: sticky; top: 0; z-index: -1; width: 100%; padding-top: 3rem; height: 7.5rem;}
-#stories > div h2 {transition: 500ms ease;}
+#stories > div h2 {transition: 1s ease;}
 #stories .h1 { font-size: 2.4rem; width: 18rem; }
 #stories h3 {font-size: 1.4rem; font-weight: 500; margin-bottom: 0.5rem;}
 #stories strong {font-size: 1.1rem; font-family: "Larken"; color: #1720fc; font-weight: 400;}
