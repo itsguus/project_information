@@ -21,6 +21,7 @@ function scrollFunction() {
     document.body.className = currentSectionObj.name;
     innerPos = parseInt(scrollPos - currentSectionObj.offset) / currentSectionObj.height + 0.45;
     console.log(innerPos);
+    updateProgressBar(scrollPos);
     if (currentSectionObj.name == "introduction") {
         addClassAt("cloud1", 0.5, innerPos);
         addClassAt("cloud2", 0.7, innerPos);
@@ -48,11 +49,18 @@ function scrollFunction() {
         addClassAt("hide", 0.9, innerPos);
     }
     else if(currentSectionObj.name == "stories") {
-        addClassAt("one", 0.40, innerPos);
-        addClassAt("two", 0.69, innerPos);
-        addClassAt("three", 0.93, innerPos);
-        addClassAt("four", 1.17, innerPos);
+        addClassAt("one", 0.48, innerPos);
+        addClassAt("two", 0.7, innerPos);
+        addClassAt("three", 1.01, innerPos);
+        addClassAt("four", 1.37, innerPos);
     }
+}
+
+function updateProgressBar(y) {
+    const bar = document.querySelector("div.progress"),
+    siteHeight = document.body.offsetHeight; 
+    var percentage = ((y + window.innerHeight) / siteHeight) * 100;
+    bar.style.width = `${percentage}%`
 }
 
 function startCounter(el) {

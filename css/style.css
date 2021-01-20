@@ -22,7 +22,9 @@ main {width: 65rem; margin: 0 auto; position: relative; padding: 0 1rem;}
 section{ position: relative; margin: 0 0 2rem 0; display: flex; align-items: flex-start;}
 section.articles { display: flex; flex-direction: column; align-items: flex-start; width: 18rem; margin-left: auto; }
 
-main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto; background: red; height: 1rem; width: 1rem; z-index: 99;}
+
+/* PROGRESS INDICATOR */
+div.progress {position: fixed; background: #1720fc; height: 0.1rem; top: 0; left: 0; width: 0; border-radius: 0 2px 2px 0; transition: 0s ease; z-index: 4;}
 
 
 /* INTRODUCTION STATE */
@@ -106,7 +108,7 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 
 /* BARCHART STATES */
 #stackedbar { margin-top: 25rem;}
-#stackedbar .canvas {position: fixed; top: 13rem; height: 25rem; width: calc(65rem - 20rem); opacity: 0; pointer-events: none; transition: 500ms ease;}
+#stackedbar .canvas {position: fixed; top: 13rem; height: 25rem; width: calc(65rem - 20rem); opacity: 0; pointer-events: none; transition: 350ms ease; z-index: 2;}
 #stackedbar .canvas .y {position: absolute; left: 0; top: 0; height: 100%; border-left: 3px solid black;}
 #stackedbar .canvas .x {position: absolute; left: 0; bottom: 0; width: 100%; border-bottom: 3px solid black;}
 #stackedbar .canvas .labels {display: flex; justify-content: space-around; position: absolute; width: 100%; bottom: -2rem;}
@@ -173,14 +175,14 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 
 /* SLACHTOFFERS AAN HET WOORD */
 #stories {margin-top: 10rem; margin-bottom: 10rem; flex-direction: column;}
-#stories > div {position: sticky; top: 0; z-index: 1; margin-left: -3rem; padding-left: 3rem; width: calc(50% + 3rem); background: #FFF; padding-top: 3rem;}
+#stories > div {position: sticky; top: 0; z-index: -1; width: 100%; padding-top: 3rem; height: 7.5rem;}
+#stories > div h2 {transition: 500ms ease;}
 #stories .h1 { font-size: 2.4rem; width: 18rem; }
 #stories h3 {font-size: 1.4rem; font-weight: 500; margin-bottom: 0.5rem;}
 #stories strong {font-size: 1.1rem; font-family: "Larken"; color: #1720fc; font-weight: 400;}
 #stories figure img {background: #1720fc; border-radius: 50%; padding: 0.5rem; width: 1.5rem; box-shadow: 0px 0px 15px rgba(23, 32, 252, 0.3); cursor: pointer;}
 #stories ul {width: 100%; position: relative;}
-#stories ul li {height: 50rem; }
-#stories ul li > div {position: sticky; top: 12rem; width: 23rem; background: #FFF; padding: 2.5rem; border: 3px solid #1d1a1c; border-radius: 2rem; margin-top: 4rem; margin-left: auto; transition: 500ms ease;}
+#stories ul li > div { width: 23rem; background: #FFF; padding: 2.5rem; border: 3px solid #1d1a1c; border-radius: 2rem; margin-top: 8rem; margin-left: auto; transition: 500ms ease;}
 #stories ul li > div > img {margin-top: 3rem; margin-bottom: 1rem;}
 #stories ul li.left > div {margin-left: 0;}
 
@@ -198,6 +200,11 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 #stories.four ul li:nth-of-type(3) > div {box-shadow: none; border: 3px solid #1d1a1c;}
 #stories.four ul li:nth-of-type(4) > div {box-shadow: 2px 2px 10px rgba(0,0,0,0.4); border: 3px solid #1720fc;}
 
+#stories.one > div h2 { margin-left: calc(100% - 18rem);}
+#stories.two > div h2 { margin-left: 0;}
+#stories.three > div h2 { margin-left: calc(100% - 18rem);}
+#stories.four > div h2 { margin-left: 0;}
+
 
 #stories ul li:last-of-type {background: #1720fc; border: none; color: #FFF; width: 15rem; position: absolute; bottom: 0; left: 0; padding: 2.5rem; border-radius: 2rem; height: 7rem;}
 #stories ul li:last-of-type p {margin-bottom: 0;}
@@ -211,11 +218,7 @@ main > div { position: fixed; top: 0; left: 0; right: 0; bottom: 0; margin: auto
 
 
 /* 
-Content kloppend maken.
-Intelligente lockdown in de barchart zetten.
-Progress indicator
 Audio's
 Scroll percentages finetunen
-Link naar bron naar notion pagina
-Speed van bars all later.
+Content kloppend maken.
 */
