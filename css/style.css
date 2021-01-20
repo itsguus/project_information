@@ -116,7 +116,7 @@ div.progress {position: fixed; background: #1720fc; height: 0.1rem; top: 0; left
 #stackedbar .canvas .lockdown {background: rgba(255, 128, 128, 0.2); position: absolute; left: 25%; width: 39%; top: 1rem; height: calc(100% - 1rem - 3px); border-left: 3px dotted #FF8080; border-right: 3px dotted #FF8080;}
 #stackedbar .canvas .lockdown span {display: block; text-align: center; font-family: "Larken"; color: #FF8080; font-size: 0.8rem; margin-top: -1.5rem;}
 #stackedbar .canvas .data { display: flex; justify-content: space-around; position: absolute; width: 100%; bottom: 3px; height: 100%; align-items: flex-end; }
-#stackedbar .canvas .data li {height: 0; width: 0.5rem; z-index: 1; transition: 750ms ease;}
+#stackedbar .canvas .data li {height: 0; width: 0.5rem; z-index: 1; transition: 750ms ease; cursor: initial;}
 #stackedbar .canvas .data li span {position: absolute; width: 1.3rem; text-align: center; padding: 0.5rem 0.8rem; background: #FFF; border-radius: 0.5rem; font-size: 0.6rem; margin-left: -1.35rem; margin-top: -2.5rem; opacity: 0; pointer-events: none; transition: 250ms ease; z-index: 2;}
 #stackedbar .canvas .data li span::after {content: ""; display: block; background: #FFF;  width: 0.5rem; height: 0.5rem; transform: rotate(45deg);  position: absolute; bottom: -0.2rem; left: 1.35rem;}
 
@@ -153,7 +153,7 @@ div.progress {position: fixed; background: #1720fc; height: 0.1rem; top: 0; left
 #stackedbar.bar3 .canvas .data.zakkenrol li {background: #eee}
 #stackedbar.bar3 .canvas .data.inbraken li span, 
 #stackedbar.bar3 .canvas .data.inbraken li span::after, 
-#stackedbar.bar3 .canvas .data.inbraken li {background: #ddd;}
+#stackedbar.bar3 .canvas .data.inbraken li {background: #ddd; color: #1d1a1c}
 #stackedbar.bar3 .canvas .data.cyber li {height: 50%;}
 
 #stackedbar.allbars .canvas .data.zakkenrol li {height: 30%;}

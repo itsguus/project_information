@@ -42,6 +42,7 @@ function scrollFunction() {
     }
     else if(currentSectionObj.name == "stackedbar") {
         addClassAt("axes", 0, innerPos, document.querySelector("#stackedbar"));
+        addClassAt("bar1", 0, innerPos);
         addClassAt("bar2", 0.35, innerPos);
         addClassAt("bar3", 0.57, innerPos);
         addClassAt("allbars", 0.8, innerPos);
