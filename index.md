@@ -46,7 +46,7 @@ stories:
         Alle contact was digitaal, want een videogesprek hadden we nooit gehad, laat staan een ontmoeting in het echt. Eén keer belden ze, zo’n 50 seconden. “Dat vond ik wel vreemd, maar ze had altijd een smoesje klaar. Een slechte connectie, geen beltegoed, of ze zat in Dubai waar skypen niet toegestaan was. Ik was graag naar Turkije gevlogen, maar dat hield ze af.”
 
         Toch liet ik mij meeslepen in een online verliefdheid.
-      audio: /img/truus.m4a
+      audio: /img/huibert.oga
     - title: >- 
         Nando’s vader werd kaalgeplukt door criminelen via truc: ‘Hij is €27.500 euro kwijt’
       markdown: | 
