@@ -17,9 +17,11 @@ cijfers_articles:
         gedupeerden van criminaliteit waren tijdens de pandemie. Dit is een weergave van de hoeveelheid mensen die getroffen zijn door verschillende misdaden. COVID-19 heeft veel economische en humanitaire verliezen veroorzaakt. Daarnaast heeft het virus een grote impact op de ontwikkeling van criminaliteit in Nederland.
     - markdown: |
         ### 8512
-        Gedupeerden tijdens de pandemie volgens de politiecijfers vanaf 1 maart 2020 tot en met 30 november 2020. Dit is een weergave van de hoeveelheid mensen die getroffen zijn door bepaalde misdaden.
+        Op basis van de politiecijfers van Januari tot November 2020 zien we dat deze 3 misdaden tijdens de corona opvallend veranderd zijn. 
+        
+        Niet alle criminelen zijn inactief door de pandemie. Het aantal fraudegevallen is sterk toegenomen. Vergeleken met voor de COVID-19 uitbraak.
 
-        Niet alle criminelen zijn inactief door de pandemie. Het aantal fraudegevallen is sterk toegenomen. Afgelopen jaar werden in maart bijna 9.000 gevallen van fraude gemeld, tegenover 6.600 een jaar geleden. Het gaat daarbij vooral om de kwestie van digitale fraude. 1.44% hiervan is cybercrime. in braak en % was zakkenrollerij.
+
 stackedbar_articles: 
   - markdown: |
       ### -75.1%
