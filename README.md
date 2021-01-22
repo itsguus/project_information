@@ -4,7 +4,7 @@ Live on [this link](https://corona-criminaliteit.nl/).
 ## Opdracht
 Werk een interactieve visual story uit over het Coronavirus. De story heeft een focus op visual storytelling en komt vanuit een creatieve unieke invalshoek waarmee we betrokkenheid bij de kijker genereren. De data die we gebruiken is van het CBS.
 
-## main
+## Werkwijze
 Ik heb de static site generator [Jekyll](https://jekyllrb.com/) gebruikt om te coderen. 
 
 ## Data
