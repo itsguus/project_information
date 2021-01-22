@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('../fonts/Poppins-Medium.eot');
+    src: local('Poppins Medium'), local('Poppins-Medium'),
+        url('../fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Poppins-Medium.woff2') format('woff2'),
+        url('../fonts/Poppins-Medium.woff') format('woff'),
+        url('../fonts/Poppins-Medium.ttf') format('truetype'),
+        url('../fonts/Poppins-Medium.svg#Poppins-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-ThinItalic.eot');
+    src: local('Larken Thin Italic'), local('Larken-ThinItalic'),
+        url('../fonts/Larken-ThinItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-ThinItalic.woff2') format('woff2'),
+        url('../fonts/Larken-ThinItalic.woff') format('woff'),
+        url('../fonts/Larken-ThinItalic.ttf') format('truetype'),
+        url('../fonts/Larken-ThinItalic.svg#Larken-ThinItalic') format('svg');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-Black.eot');
+    src: local('Larken Black'), local('Larken-Black'),
+        url('../fonts/Larken-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-Black.woff2') format('woff2'),
+        url('../fonts/Larken-Black.woff') format('woff'),
+        url('../fonts/Larken-Black.ttf') format('truetype'),
+        url('../fonts/Larken-Black.svg#Larken-Black') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-BlackItalic.eot');
+    src: local('Larken Black Italic'), local('Larken-BlackItalic'),
+        url('../fonts/Larken-BlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-BlackItalic.woff2') format('woff2'),
+        url('../fonts/Larken-BlackItalic.woff') format('woff'),
+        url('../fonts/Larken-BlackItalic.ttf') format('truetype'),
+        url('../fonts/Larken-BlackItalic.svg#Larken-BlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-BoldItalic.eot');
+    src: local('Larken Bold Italic'), local('Larken-BoldItalic'),
+        url('../fonts/Larken-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Larken-BoldItalic.woff') format('woff'),
+        url('../fonts/Larken-BoldItalic.ttf') format('truetype'),
+        url('../fonts/Larken-BoldItalic.svg#Larken-BoldItalic') format('svg');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-ExtraBold.eot');
+    src: local('Larken ExtraBold'), local('Larken-ExtraBold'),
+        url('../fonts/Larken-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-ExtraBold.woff2') format('woff2'),
+        url('../fonts/Larken-ExtraBold.woff') format('woff'),
+        url('../fonts/Larken-ExtraBold.ttf') format('truetype'),
+        url('../fonts/Larken-ExtraBold.svg#Larken-ExtraBold') format('svg');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-Regular.eot');
+    src: local('Larken Regular'), local('Larken-Regular'),
+        url('../fonts/Larken-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-Regular.woff2') format('woff2'),
+        url('../fonts/Larken-Regular.woff') format('woff'),
+        url('../fonts/Larken-Regular.ttf') format('truetype'),
+        url('../fonts/Larken-Regular.svg#Larken-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-Medium.eot');
+    src: local('Larken Medium'), local('Larken-Medium'),
+        url('../fonts/Larken-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-Medium.woff2') format('woff2'),
+        url('../fonts/Larken-Medium.woff') format('woff'),
+        url('../fonts/Larken-Medium.ttf') format('truetype'),
+        url('../fonts/Larken-Medium.svg#Larken-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-Bold.eot');
+    src: local('Larken Bold'), local('Larken-Bold'),
+        url('../fonts/Larken-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-Bold.woff2') format('woff2'),
+        url('../fonts/Larken-Bold.woff') format('woff'),
+        url('../fonts/Larken-Bold.ttf') format('truetype'),
+        url('../fonts/Larken-Bold.svg#Larken-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-LightItalic.eot');
+    src: local('Larken Light Italic'), local('Larken-LightItalic'),
+        url('../fonts/Larken-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-LightItalic.woff2') format('woff2'),
+        url('../fonts/Larken-LightItalic.woff') format('woff'),
+        url('../fonts/Larken-LightItalic.ttf') format('truetype'),
+        url('../fonts/Larken-LightItalic.svg#Larken-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-MediumItalic.eot');
+    src: local('Larken Medium Italic'), local('Larken-MediumItalic'),
+        url('../fonts/Larken-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-MediumItalic.woff2') format('woff2'),
+        url('../fonts/Larken-MediumItalic.woff') format('woff'),
+        url('../fonts/Larken-MediumItalic.ttf') format('truetype'),
+        url('../fonts/Larken-MediumItalic.svg#Larken-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-ExtraBoldItalic.eot');
+    src: local('Larken ExtraBold Italic'), local('Larken-ExtraBoldItalic'),
+        url('../fonts/Larken-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-ExtraBoldItalic.woff2') format('woff2'),
+        url('../fonts/Larken-ExtraBoldItalic.woff') format('woff'),
+        url('../fonts/Larken-ExtraBoldItalic.ttf') format('truetype'),
+        url('../fonts/Larken-ExtraBoldItalic.svg#Larken-ExtraBoldItalic') format('svg');
+    font-weight: 800;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-Light.eot');
+    src: local('Larken Light'), local('Larken-Light'),
+        url('../fonts/Larken-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-Light.woff2') format('woff2'),
+        url('../fonts/Larken-Light.woff') format('woff'),
+        url('../fonts/Larken-Light.ttf') format('truetype'),
+        url('../fonts/Larken-Light.svg#Larken-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LarkenVariableItalic';
+    src: url('../fonts/LarkenVariableItalic.eot');
+    src: local('Larken Variable Italic'), local('LarkenVariableItalic'),
+        url('../fonts/LarkenVariableItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LarkenVariableItalic.woff2') format('woff2'),
+        url('../fonts/LarkenVariableItalic.woff') format('woff'),
+        url('../fonts/LarkenVariableItalic.ttf') format('truetype'),
+        url('../fonts/LarkenVariableItalic.svg#LarkenVariableItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'LarkenVariable';
+    src: url('../fonts/LarkenVariable.eot');
+    src: local('Larken Variable'), local('LarkenVariable'),
+        url('../fonts/LarkenVariable.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/LarkenVariable.woff2') format('woff2'),
+        url('../fonts/LarkenVariable.woff') format('woff'),
+        url('../fonts/LarkenVariable.ttf') format('truetype'),
+        url('../fonts/LarkenVariable.svg#LarkenVariable') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Larken';
+    src: url('../fonts/Larken-Thin.eot');
+    src: local('Larken Thin'), local('Larken-Thin'),
+        url('../fonts/Larken-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Larken-Thin.woff2') format('woff2'),
+        url('../fonts/Larken-Thin.woff') format('woff'),
+        url('../fonts/Larken-Thin.ttf') format('truetype'),
+        url('../fonts/Larken-Thin.svg#Larken-Thin') format('svg');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('../fonts/GillSans.eot');
+    src: local('Gill Sans'), local('GillSans'),
+        url('../fonts/GillSans.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GillSans.woff2') format('woff2'),
+        url('../fonts/GillSans.woff') format('woff'),
+        url('../fonts/GillSans.ttf') format('truetype'),
+        url('../fonts/GillSans.svg#GillSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('../fonts/GillSans-Light.eot');
+    src: local('Gill Sans Light'), local('GillSans-Light'),
+        url('../fonts/GillSans-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GillSans-Light.woff2') format('woff2'),
+        url('../fonts/GillSans-Light.woff') format('woff'),
+        url('../fonts/GillSans-Light.ttf') format('truetype'),
+        url('../fonts/GillSans-Light.svg#GillSans-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Gill Sans';
+    src: url('../fonts/GillSans-Bold.eot');
+    src: local('Gill Sans Bold'), local('GillSans-Bold'),
+        url('../fonts/GillSans-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GillSans-Bold.woff2') format('woff2'),
+        url('../fonts/GillSans-Bold.woff') format('woff'),
+        url('../fonts/GillSans-Bold.ttf') format('truetype'),
+        url('../fonts/GillSans-Bold.svg#GillSans-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

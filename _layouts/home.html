@@ -1,32 +1,150 @@
 {% include header.html %}
 
+{% assign articles = page.articles %}
 
-<section class="introduction">
-
+<section id="introduction">
+    <figure>
+        <img src="/img/intro.svg" alt="Illustration of a man on a laptop">
+        <img src="/img/wolkje.svg" alt="Illustration of a cloud">
+        <img src="/img/wolkje.svg" alt="Illustration of a cloud">
+    </figure>
+    <section class="articles">
+        <article>
+            <h1>{{ articles[0].title }}</h1>
+            {{ articles[0].markdown | markdownify }}
+        </article>
+    </section>
 </section>
 
-<div class="asd"></div>
+<section id="cijfers">
+    <section class="figures">
+        <figure>
+            <span>0</span>
+        </figure>
+        <figure class="bars">
+            <ul>
+                <li>
+                    <span>Inbraken</span>
+                    <span>19995</span>
+                </li>
+                <li>
+                    <span>Cybercrime</span>
+                    <span>8512</span>
+                </li>
+                <li>
+                    <span>Zakkenrollerij</span>
+                    <span>4315</span>
+                </li>
+            </ul>
+        </figure>
+        <!-- <div class="bluebg"></div> -->
+    </section>
+    <section class="articles">
+        {% for article in page.cijfers_articles %}
+        <article>{{ article.markdown | markdownify }}</article>
+        {% endfor %}
+        <!-- <ul>
+            <li>
+                <ul>
+                    {% for item in page.krantenkoppen_inbraken %}
+                    <li>{{ item.title }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    {% for item in page.krantenkoppen_cybercrime %}
+                    <li>{{ item.title }}</li>
+                    {% endfor %}
+                </ul>
+            </li>
+            <li>
+                <ul>
+                    {% for item in page.krantenkoppen_zakkenrollerij %}
+                    <li>{{ item.title }}</li>
+                    {% endfor %}
+                </ul>
+            </li> -->
+    </section>
+</section>
 
-<section class="bigscroll">
-    <div class="sticky">
-        <div class="lijn"><div class="color"></div></div>
-        <ul class="bolletjes">
-            {% assign months = site.data.months.months %}
-            {% for item in months %}
-            <li><a class="{{ item.abbreviation }}" href="#{{item.abbreviation | slugify}}">{{ item.title | capitalize }}</a></li>
-            {% endfor %}
-        </ul>
+<section id="stackedbar">
+    <figure>
+        <div class="canvas">
+            <div class="x"></div>
+            <div class="y"></div>
+            <div class="lockdown">
+                <span>Intelligente lockdown</span>
+            </div>
+            <ul class="labels">
+                {% for item in site.data.months.months %}
+                    <li>{{ item.abbreviation | capitalize }}</li>
+                {% endfor %}
+            </ul>
+            {% assign data = site.data.stacked_bar_data %}
+            {% assign max_input = 4200.0 %}
+            <ul class="data inbraken">
+                {% for item in data %}
+                    {% assign max_height = item.inbraak | divided_by: max_input | times: 100 %}
+                    <li style="max-height: {{ max_height }}%">
+                        <span>{{ item.inbraak }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul class="data cyber">
+                {% for item in data %}
+                    {% assign max_height = item.cyber | divided_by: max_input | times: 100 %}
+                    <li style="max-height: {{ max_height }}%">
+                        <span>{{ item.cyber }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+            <ul class="data zakkenrol">
+                {% for item in data %}
+                    {% assign max_height = item.zakkenrollerij | divided_by: max_input | times: 100 %}
+                    <li style="max-height: {{ max_height }}%">
+                        <span>{{ item.zakkenrollerij }}</span>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </figure>
+    <section class="articles">
+        {% for article in page.stackedbar_articles %}
+            <article>{{ article.markdown | markdownify }}</article>
+        {% endfor %}
+    </section>
+</section>
+
+<section id="stories">
+    <div>
+        <h2 class="h1">Slachtoffers van cyberfraude aan het woord</h2>
     </div>
+    <ul>
+        {% for story in page.stories %}
+        {% assign count = forloop.index | modulo: 2 %}
+            <li {% if count == 1 %} class="left" {% endif %}>
+                <div>
+                <figure>
+                    <audio>
+                        <source src="{{ story.audio }}" type="audio/mp4"> 
+                    </audio>
+                    <img  class="audio{{ forloop.index }}" src="/img/audio.svg" alt="Audio icon">
+                </figure>
+                <img src="/img/story{{ forloop.index }}.svg" alt=""> 
+                <h3>{{ story.title }}</h3>
+                {{ story.markdown | markdownify }}
+            </div>
+            </li>
+        {% endfor %}
+        <li> 
+            {{ page.pay_off_markdown | markdownify }}
+        </li>
+    </ul>
+</section>
 
-    <section id="mar"><h2>maart</h2></section>
-    <section id="apr"><h2>april</h2></section>
-    <section id="may"><h2>mei</h2></section>
-    <section id="jun"><h2>juni</h2></section>
-    <section id="jul"><h2>juli</h2></section>
-    <section id="aug"><h2>augustus</h2></section>
-    <section id="sep"><h2>september</h2></section>
-    <section id="okt"><h2>oktober</h2></section>
-    <section id="nov"><h2>november</h2></section>
+<section id="bron">
+    <a target="_blank" href="https://www.notion.so/Bronnenlijst-7063a59208fb48fa9ac2fa30dca7bd6e">Bron</a>
 </section>
 
 {% include footer.html %}
