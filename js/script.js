@@ -16,16 +16,6 @@ getAllSections();
 
 
 function scrollFunction() {
-<<<<<<< HEAD
-    let scrollPos = window.scrollY; 
-    setBodyClass(scrollPos);
-    if(scrollPos > offsetMar) {
-        // scroll gets the scrollPos minus where the last offset is (to start at 0 again), then gets the speed
-        // by dividing the height by so 12.5 * 100% (every line is 1/8 of total) will be the end. Then minus 100 because the starting place
-        // of the overflow div is -100%. Then we + 8.3% for every iteration it has done otherwise it would start again at 0. 
-        let scroll = parseFloat(((((scrollPos - currentMonthDom.offsetTop) / (currentMonthDom.offsetHeight)) / 12.5 * 100) - 100) + (8.3 * document.body.getAttribute("data-multiplier")));
-        document.querySelector(".color").style = `transform: translateX(${scroll}%)`
-=======
     let scrollPos = window.scrollY;
     currentSectionObj = getSection(scrollPos);
     document.body.className = currentSectionObj.name;
@@ -36,7 +26,6 @@ function scrollFunction() {
         addClassAt("cloud1", 0.5, innerPos);
         addClassAt("cloud2", 0.7, innerPos);
         addClassAt("noclouds", 0.95, innerPos);
->>>>>>> 10f10f8d607ebb96ae034e9106ef0d93b2a3db1e
     }
 
     else if (currentSectionObj.name == "cijfers") {
