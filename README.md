@@ -12,7 +12,7 @@ Alle data die ik heb gebruikt komt van de politie..
 
 ### **Dataset:** [Geregistreerde misdrijven en aangiften; soort misdrijf, gemeente](https://data.politie.nl/?dl=434E4#/Politie/nl/dataset/47013NED/table)
 
-De barcharts die zijn gemaakt zijn HTML elementen, met een height van 100%, en een max-height die met Liquid berekend wordt. 
+De barcharts die zijn gemaakt zijn HTML elementen, met een height van 100%, en een max-height die met Liquid berekend wordt. Met deze manier heb ik een static site die m.b.v. CSS classes alle transities maakt. Alle berekeningen zijn al server-side gedaan. Hierdoor is de performance goed en blijft alles smooth lopen. Dit was mogelijk omdat het ontwerp niet vroeg naar dynamische input van data.
 
 ## Installatie
 Navigaar naar de gewenste directory. Zet de volgende code in je terminal.
